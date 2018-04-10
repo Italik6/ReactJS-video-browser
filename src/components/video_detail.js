@@ -2,8 +2,9 @@ import React from 'react';
 
 const VideoDetail = (props) => {
     const video = props.video;
+    
     if (!video) {
-        return <div className="loading">Loading...</div>;
+        return <div className="loading">Search your favourite movies from YT. Enjoy!</div>;
     }
 
     const videoTitle = video.snippet.title;
