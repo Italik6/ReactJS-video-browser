@@ -3,11 +3,11 @@ import React from 'react';
 const VideoDetail = (props) => {
     const video = props.video;
     if (!video) {
-        return <div>Loading...</div>;
+        return <div className="loading">Loading...</div>;
     }
 
     const videoTitle = video.snippet.title;
-    const videoDescription = video.snippet.description;
+    const videoChannel = video.snippet.channelTitle;
     const videoId = video.id.videoId;
     const url = `https://www.youtube.com/embed/${videoId}`;
 
@@ -18,7 +18,7 @@ const VideoDetail = (props) => {
             </div>
             <div className="details">
                 <div>{videoTitle}</div>
-                <div>{videoDescription}</div>
+                <div>{videoChannel}</div>
             </div>
         </div>
     )

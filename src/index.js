@@ -10,14 +10,11 @@ const API_KEY = 'AIzaSyA4rzfkCMJXDlSDG4pQU_qCJh6tATTSxRE';
 class App extends Component {
     constructor(props) {
         super(props);
-
         this.state = { 
             videos: [],
             selectedVideo : null
         };
-
         this.videoSearch('rap');
-       
     }
 
     videoSearch(term) {
